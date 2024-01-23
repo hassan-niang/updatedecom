@@ -35,17 +35,13 @@ const handleSort = (option) => {
 
   return (
     <>
-      <div className="contaier">
-
         <div className="filter">
           <h3>Sort By</h3>
-          <button onClick={()=> handleSort('Price Low to High')}>Price Low to High</button>
-          <button onClick={()=> handleSort('A-Z')}>A-Z</button>
-          <button onClick={handleSort}>Chains</button>
-          <button onClick={handleSort}>Earrings</button>
-          <button onClick={handleSort}>Grillz</button>
+          <button onClick={()=> handleSort('Price Low to High')} className='filterbtn'>Price Low to High</button>
+          <button onClick={()=> handleSort('A-Z')} className='filterbtn'>A-Z</button>
         </div>
 
+      <div className="contaier">
         <div className="product-grid">
           {item.map((items) => (
             <div className="card stacked">
